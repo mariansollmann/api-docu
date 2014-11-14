@@ -52,13 +52,13 @@
  * @apiParam {String}    [description]  The description of the feed
  * @apiParam {String[]}  [tagList]      Tags of the feed
  *
- * @apiSuccess {String}    id           The feed Id
- * @apiSuccess {String}    name         The name of the feed
- * @apiSuccess {String}    description  The description of the feed
- * @apiSuccess {String}    channelId    The channel Id
- * @apiSuccess {String}    application  The Id of the application the feed belongs to
- * @apiSuccess {String[]}  tagList      List of set tags
- * @apiSuccess {Int}       createStamp  Unix time stamp of create time
+ * @apiSuccess {String}    id             The feed Id
+ * @apiSuccess {String}    name           The name of the feed
+ * @apiSuccess {String}    description    The description of the feed
+ * @apiSuccess {String}    channelId      The channel Id
+ * @apiSuccess {String}    applicationId  The Id of the application the feed belongs to
+ * @apiSuccess {String[]}  tagList        List of set tags
+ * @apiSuccess {Int}       createStamp    Unix time stamp of create time
  *
  * @apiSuccessExample {json} Success-Response:
  * HTTP/1.1 200 OK
@@ -67,7 +67,7 @@
  *       "name": "Son Goku",
  *       "description": "The Son Goku feed. Here Son Goku will push all his news.",
  *       "channelId": "ASJDH86ASD678ASDASD768",
- *       "application": "KAJFDA786FDS87FDS78F6",
+ *       "applicationId": "KAJFDA786FDS87FDS78F6",
  *       "tagList": [
  *         "Saiyan",
  *         "Dragon Ball",
@@ -89,13 +89,13 @@
  * @apiParam {String}  applicationId  The application id
  * @apiParam {String}  feedId         The feed id
  *
- * @apiSuccess {String}    id           The feed id
- * @apiSuccess {String}    name         The name of the feed
- * @apiSuccess {String}    description  The description of the feed
- * @apiSuccess {String}    channelId    The channel Id
- * @apiSuccess {String}    application  The Id of the application the feed belongs to
- * @apiSuccess {String[]}  tagList      List of set tags
- * @apiSuccess {Int}       createStamp  Unix time stamp of create time
+ * @apiSuccess {String}    id             The feed id
+ * @apiSuccess {String}    name           The name of the feed
+ * @apiSuccess {String}    description    The description of the feed
+ * @apiSuccess {String}    channelId      The channel Id
+ * @apiSuccess {String}    applicationId  The Id of the application the feed belongs to
+ * @apiSuccess {String[]}  tagList        List of set tags
+ * @apiSuccess {Int}       createStamp    Unix time stamp of create time
  *
  * @apiSuccessExample {json} Success-Response:
  * HTTP/1.1 200 OK
@@ -104,7 +104,7 @@
  *       "name": "Son Goku",
  *       "description": "The Son Goku feed. Here Son Goku will push all his news.",
  *       "channelId": "ASJDH86ASD678ASDASD768",
- *       "application": "KAJFDA786FDS87FDS78F6",
+ *       "applicationId": "KAJFDA786FDS87FDS78F6",
  *       "tagList": [
  *         "Saiyan",
  *         "Dragon Ball",
@@ -129,13 +129,13 @@
  * @apiParam {String}    [description]  The description of the feed
  * @apiParam {String[]}  [tagList]      Tags of the feed
  *
- * @apiSuccess {String}    id           The feed Id
- * @apiSuccess {String}    name         The name of the feed
- * @apiSuccess {String}    description  The description of the feed
- * @apiSuccess {String}    channelId    The channel Id
- * @apiSuccess {String}    application  The Id of the application the feed belongs to
- * @apiSuccess {String[]}  tagList      List of set tags
- * @apiSuccess {Int}       createStamp  Unix time stamp of create time
+ * @apiSuccess {String}    id             The feed Id
+ * @apiSuccess {String}    name           The name of the feed
+ * @apiSuccess {String}    description    The description of the feed
+ * @apiSuccess {String}    channelId      The channel Id
+ * @apiSuccess {String}    applicationId  The Id of the application the feed belongs to
+ * @apiSuccess {String[]}  tagList        List of set tags
+ * @apiSuccess {Int}       createStamp    Unix time stamp of create time
  *
  * @apiSuccessExample {json} Success-Response:
  * HTTP/1.1 200 OK
@@ -144,7 +144,7 @@
  *       "name": "Son Goku",
  *       "description": "The Son Goku feed. Here Son Goku will push all his news.",
  *       "channelId": "ASJDH86ASD678ASDASD768",
- *       "application": "KAJFDA786FDS87FDS78F6",
+ *       "applicationId": "KAJFDA786FDS87FDS78F6",
  *       "tagList": [
  *         "Saiyan",
  *         "Dragon Ball",

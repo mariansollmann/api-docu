@@ -13,7 +13,7 @@
  * @apiSuccess {String}    feed.id                The application Id
  * @apiSuccess {String}    feed.name              The name of the application
  * @apiSuccess {String}    feed.channelId         The channel Id of the feed
- * @apiSuccess {String}    feed.application       The id of the application the feed belongs to
+ * @apiSuccess {String}    feed.applicationId     The id of the application the feed belongs to
  * @apiSuccess {Int}       feed.createStamp       Unix time stamp of create time
  * @apiSuccess {Object[]}  entryList              Array of all entries
  * @apiSuccess {String}    entryList.id           The entry Id
@@ -26,7 +26,7 @@
  *           "id": "KAJFDA7GFTRE87FDS78F7",
  *           "name": "Son Goku",
  *           "channelId": "ASJDH86ASD678ASDASD768",
- *           "application": "KAJFDA786FDS87FDS78F6",
+ *           "applicationId": "KAJFDA786FDS87FDS78F6",
  *           "createStamp": "1415637736",
  *       }
  *       "entryList": [
@@ -51,11 +51,11 @@
  * @apiParam {String}    applicationId  The application id
  * @apiParam {String}    feedId         The feed id
  * @apiParam {String}    data           The data of the entry
- * @apiParam {STring[]}  [tagList]      Tags of the entry
+ * @apiParam {String[]}  [tagList]      Tags of the entry
  *
  * @apiSuccess {String}    id             The feed Id
- * @apiSuccess {String}    application    The application id
- * @apiSuccess {String}    feed           The feed id
+ * @apiSuccess {String}    applicationId  The application id
+ * @apiSuccess {String}    feedId         The feed id
  * @apiSuccess {String}    data           The data of the entry
  * @apiSuccess {String[]}  tagList        List of set tags
  * @apiSuccess {Int}       createStamp    Unix time stamp of create time
@@ -64,8 +64,8 @@
  * HTTP/1.1 200 OK
  *     {
  *       "id": "KAJFDA7GFTRE87FDS78F7",
- *       "application": "KAJDFE7GFTRE87FDS78F7",
- *       "feed": "KAJDFE7GFTRE87FDS78F7",
+ *       "applicationId": "KAJDFE7GFTRE87FDS78F7",
+ *       "feedId": "KAJDFE7GFTRE87FDS78F7",
  *       "data": "Hello, I'm Son Gocu and this is my first post.",
  *       "tagList": [
  *         "First",
@@ -89,8 +89,8 @@
  * @apiParam {String}  entryId        The entry id
  *
  * @apiSuccess {String}    id             The feed Id
- * @apiSuccess {String}    application    The application id
- * @apiSuccess {String}    feed           The feed id
+ * @apiSuccess {String}    applicationId  The application id
+ * @apiSuccess {String}    feedId         The feed id
  * @apiSuccess {String}    data           The data of the entry
  * @apiSuccess {String[]}  tagList        List of set tags
  * @apiSuccess {Int}       createStamp    Unix time stamp of create time
@@ -99,8 +99,8 @@
  * HTTP/1.1 200 OK
  *     {
  *       "id": "KAJFDA7GFTRE87FDS78F7",
- *       "application": "KAJDFE7GFTRE87FDS78F7",
- *       "feed": "KAJDFE7GFTRE87FDS78F7",
+ *       "applicationId": "KAJDFE7GFTRE87FDS78F7",
+ *       "feedId": "KAJDFE7GFTRE87FDS78F7",
  *       "data": "Hello, I'm Son Gocu and this is my first post.",
  *       "tagList": [
  *         "First",
@@ -126,8 +126,8 @@
  * @apiParam {String[]}  [tagList]      Tags of the entry
  *
  * @apiSuccess {String}    id             The feed Id
- * @apiSuccess {String}    application    The application id
- * @apiSuccess {String}    feed           The feed id
+ * @apiSuccess {String}    applicationId  The application id
+ * @apiSuccess {String}    feed Id        The feed id
  * @apiSuccess {String}    data           The data of the entry
  * @apiSuccess {String[]}  tagList        List of set tags
  * @apiSuccess {Int}       createStamp    Unix time stamp of create time
@@ -136,8 +136,8 @@
  * HTTP/1.1 200 OK
  *     {
  *       "id": "KAJFDA7GFTRE87FDS78F7",
- *       "application": "KAJDFE7GFTRE87FDS78F7",
- *       "feed": "KAJDFE7GFTRE87FDS78F7",
+ *       "applicationId": "KAJDFE7GFTRE87FDS78F7",
+ *       "feedId": "KAJDFE7GFTRE87FDS78F7",
  *       "data": "Hello, I'm Son Gocu and this is my first post.",
  *       "tagList": [
  *         "First",
