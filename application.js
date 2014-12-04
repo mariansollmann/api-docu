@@ -34,7 +34,8 @@
  *
  * @apiDescription Create a application.
  *
- * @apiStructure Application
+ * @apiParam {String}  name           The name of the application
+ * @apiParam {String}  [description]  The description of the application
  *
  * @apiExample {json} Example post body (json):
  *     {
@@ -42,7 +43,19 @@
  *       "description": "The DragonBall application. This will contain feeds for all DragonBall characters."
  *     }
  *
- * @apiSuccessStructure ApplicationSuccess
+ * @apiSuccess {String}  id           The application Id
+ * @apiSuccess {String}  name         The name of the application
+ * @apiSuccess {String}  description  The description of the application
+ * @apiSuccess {Int}     createStamp  Unix time stamp of create time
+ *
+ * @apiSuccessExample {json} Success-Response:
+ * HTTP/1.1 200 OK
+ *     {
+ *       "id": "KAJFDA786FDS87FDS78F6",
+ *       "name": "DragonBall",
+ *       "description": "The DragonBall application. This will contain feeds for all DragonBall characters.",
+ *       "createStamp": "1415637736",
+ *     }
  */
 
 
@@ -56,7 +69,19 @@
  *
  * @apiParam {String}  applicationId  The application id
  *
- * @apiSuccessStructure ApplicationSuccess
+ * @apiSuccess {String}  id           The application Id
+ * @apiSuccess {String}  name         The name of the application
+ * @apiSuccess {String}  description  The description of the application
+ * @apiSuccess {Int}     createStamp  Unix time stamp of create time
+ *
+ * @apiSuccessExample {json} Success-Response:
+ * HTTP/1.1 200 OK
+ *     {
+ *       "id": "KAJFDA786FDS87FDS78F6",
+ *       "name": "DragonBall",
+ *       "description": "The DragonBall application. This will contain feeds for all DragonBall characters.",
+ *       "createStamp": "1415637736",
+ *     }
  */
 
 
@@ -69,7 +94,8 @@
  * @apiDescription Update a specific application.
  *
  * @apiParam {String}  applicationId  The application id
- * @apiStructure Application
+ * @apiParam {String}  name           The name of the application
+ * @apiParam {String}  [description]  The description of the application
  *
  * @apiExample {json} Example post body (json):
  *     {
@@ -77,7 +103,19 @@
  *       "description": "The DragonBall application. This will contain feeds for all DragonBall characters."
  *     }
  *
- * @apiSuccessStructure ApplicationSuccess
+ * @apiSuccess {String}  id           The application Id
+ * @apiSuccess {String}  name         The name of the application
+ * @apiSuccess {String}  description  The description of the application
+ * @apiSuccess {Int}     createStamp  Unix time stamp of create time
+ *
+ * @apiSuccessExample {json} Success-Response:
+ * HTTP/1.1 200 OK
+ *     {
+ *       "id": "KAJFDA786FDS87FDS78F6",
+ *       "name": "DragonBall",
+ *       "description": "The DragonBall application. This will contain feeds for all DragonBall characters.",
+ *       "createStamp": "1415637736",
+ *     }
  */
 
 
@@ -93,35 +131,4 @@
  *
  * @apiSuccessExample {json} Success-Response:
  * HTTP/1.1 200 OK
- */
-
-
-/** Helper
- ************************************************************************************************
- */
-
-/**
- * @apiDefineStructure Application
- *
- * @apiParam {String}  name           The name of the application
- * @apiParam {String}  [description]  The description of the application
- */
-
-
-/**
- * @apiDefineSuccessStructure ApplicationSuccess
- *
- * @apiSuccess {String}  id           The application Id
- * @apiSuccess {String}  name         The name of the application
- * @apiSuccess {String}  description  The description of the application
- * @apiSuccess {Int}     createStamp  Unix time stamp of create time
- *
- * @apiSuccessExample {json} Success-Response:
- * HTTP/1.1 200 OK
- *     {
- *       "id": "KAJFDA786FDS87FDS78F6",
- *       "name": "DragonBall",
- *       "description": "The DragonBall application. This will contain feeds for all DragonBall characters.",
- *       "createStamp": "1415637736",
- *     }
  */
